@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cipher AI</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="app-header">
+      <div class="logo">
+        <img class="Cipher-AI" src="images/CipherAI.jpg" alt="Cipher AI" />
+        <h1>Cipher AI</h1>
+      </div>
+      <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button>
+    </header>
+
+    <div class="content">
+      <div class="welcome-screen">
+        <h2>How can I assist you today?</h2>
+        <div class="suggestions-grid">
+          <div class="suggestion-card" data-suggestion="Can you help me create a simple todo list application?">
+            <span class="material-symbols-rounded">assignment</span>
+            <p>Create a Todo List App</p>
+          </div>
+          <div class="suggestion-card" data-suggestion="How do I create a responsive navigation menu?">
+            <span class="material-symbols-rounded">menu</span>
+            <p>Build Responsive Navigation</p>
+          </div>
+          <div class="suggestion-card" data-suggestion="Can you show me how to implement user authentication?">
+            <span class="material-symbols-rounded">lock</span>
+            <p>Implement User Authentication</p>
+          </div>
+          <div class="suggestion-card" data-suggestion="Help me create an API with CRUD operations">
+            <span class="material-symbols-rounded">api</span>
+            <p>Create CRUD API</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chats-container"></div>
+    </div>
+
+    <footer class="prompt-container">
+      <div class="prompt-wrapper">
+        <form class="prompt-form">
+          <input type="text" placeholder="Message AI Assistant..." class="prompt-input" required />
+          <div class="file-upload-wrapper">
+            <img src="#" class="file-preview" />
+            <input id="file-input" type="file" accept="image/*, .pdf, .txt, .csv" hidden />
+            <button id="cancel-file-btn" type="button" class="material-symbols-rounded">close</button>
+            <button id="add-file-btn" type="button" class="material-symbols-rounded">attach_file</button>
+          </div>
+          <button id="stop-response-btn" type="button" class="material-symbols-rounded">stop_circle</button>
+          <button id="send-prompt-btn" class="material-symbols-rounded">send</button>
+        </form>
+        <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
